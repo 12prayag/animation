@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-*{
-    margin: 0%;
-    padding: 0%;
-}
-.box1{
-    height: 641px;
-    width: 100%;
-    margin: 0%;
-}
-.box{
-    position: fixed;
-    transition:all;
-    display: block;
-    margin: 0;
-    width:100%  ;
-    object-fit:cover;
-   height:100% ;
-   
-}
-</style>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .box1 {
+            --boder-num: 20px;
+            height: 641px;
+            width: calc(100% - 2 * var(--boder-num));
+
+            border: var(--boder-num) solid rgb(211 220 50 / 0.6);
+        }
+
+        .box {
+
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+
+        }
+    </style>
 </head>
+
 <body>
     <div class="box1">
-    <image class="box" src="https://images.pexels.com/photos/33220017/pexels-photo-33220017.jpeg"></image>
-</div>
+
+        <image class="box" src="https://images.pexels.com/photos/33220017/pexels-photo-33220017.jpeg"></image>
+
+
+    </div>
 </body>
+
 </html>
