@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.poper-ev {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding-block: 20px;
+    z-index: 10;
+    color: aliceblue;
+}
+
+.hend-head {
+
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.text-men {
+    font-size: 20px;
+}
+
+.neme-second {
+    position: absolute;
+    top: 50%;
+    margin-block: auto;
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.constric {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+
+}
+
+.container {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.kemio-coma {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.senter-of-nation {
+    width: 300px;
+    height: 500px;
+}
+
+.jems-stope {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.senter-of-nation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-box {
+    padding-block: 100px;
+}
+
+/* .kemio-coma img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
