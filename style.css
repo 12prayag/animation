@@ -54,10 +54,11 @@ header {
 
 }
 
-/* .nevigation-coma {
+ .nevigation-coma {
 
-
-} */
+display: flex;
+align-items: center;
+} 
 
 .netiv-folt {
     text-align: left;
@@ -156,11 +157,11 @@ header {
 .generic-hamburger {
     outline: none;
     background-color: transparent;
-    width: 1.5em;
-    height: 1em;
+    width: 36px;
+    height: 36px;
     position: relative;
     border: none;
-    font-size: 30px;
+    
 }
 
 .generic-hamburger__checkbox:checked~.generic-hamburger__bar:nth-of-type(1),
@@ -184,6 +185,7 @@ header {
 .generic-hamburger__bar {
     background-color: #fcf7f7;
     width: 100%;
+    height: 4px;
     left: 0;
     transform-origin: center;
     height: 8px;
@@ -227,7 +229,7 @@ header {
         flex-direction: column;
         width: 300px;
         height: 100%;
-        background-color: rgb(11, 13, 15);
+        background-color: rgba(11, 13, 15, 0.623);
         top: 0;
         left: 0;
         justify-content: start;
@@ -242,9 +244,7 @@ header {
         align-items: start;
 
     }
-
-    .module-content-wrapper {}
-
+    
     .active {
         transform: translateX(0);
 
@@ -255,5 +255,75 @@ header {
     }
     .neme-second{
         font-size: 30px;
+    }
+
+}
+
+@media (max-width:767.99px) {
+    .hend-head {
+        position: fixed;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(11, 13, 15, 0.623);
+        top: 0;
+        left: 0;
+        justify-content: start;
+        padding-top: 100px;
+        padding-inline: 20px;
+        transform: translateX(-100%);
+        transition: all 0.5s ease;
+    }
+
+    .constric {
+        flex-direction: column;
+        align-items: start;
+
+    }
+    
+    .active {
+        transform: translateX(0);
+
+    }
+
+    .bottom-for-tmo {
+        display: block;
+    }
+    .neme-second{
+        font-size: 20px;
+    }
+}
+@media (max-width:556.99px) {
+    .hend-head {
+        position: fixed;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(11, 13, 15, 0.623);
+        top: 0;
+        left: 0;
+        justify-content: start;
+        padding-top: 100px;
+        padding-inline: 20px;
+        transform: translateX(-100%);
+        transition: all 0.5s ease;
+    }
+
+    .constric {
+        flex-direction: column;
+        align-items: start;
+
+    }
+    
+    .active {
+        transform: translateX(0);
+
+    }
+
+    .bottom-for-tmo {
+        display: block;
+    }
+    .neme-second{
+        font-size: 15px;
     }
 }
