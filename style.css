@@ -20,7 +20,7 @@ body {
 
 }
 
-::selection{
+::selection {
     background-color: rgba(13, 150, 241, 0.877);
 }
 
@@ -29,7 +29,8 @@ header {
     width: 100%;
     padding-block: 20px;
     z-index: 10;
-    color: aliceblue;
+    top: 0;
+    left: 0;
     background-color: #051036bb;
 
 }
@@ -37,6 +38,7 @@ header {
 .aencer-def {
     color: antiquewhite;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .ment-walt {
@@ -47,16 +49,16 @@ header {
 .module-content {
     height: 30px;
     border-radius: 50%;
-    font-size: 25px;
+    /* font-size: 25px;
     text-align: left;
-    text-decoration: none;
-    color: antiquewhite;
-    font-display: auto;
+    text-decoration: none;  */
+
 
 }
 
 .nevigation-coma {
-
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -101,18 +103,17 @@ header {
 
 .constric {
     display: flex;
-    padding: 0;
-    margin: 0;
-    width: 90%;
     align-items: center;
     gap: 30px;
     list-style: none;
 
 }
+
 .hero-sction {
     position: relative;
     height: 100vh;
 }
+
 /* IMAGE BG */
 .hero-bg {
     height: 100%;
@@ -124,6 +125,7 @@ header {
     width: 100%;
     object-fit: cover;
 }
+
 .neme-second {
     position: absolute;
     top: 50%;
@@ -131,12 +133,12 @@ header {
     transform: translate(-50%, -50%);
     margin-block: auto;
     text-align: center;
-    width: 100%;
+    font-size: 40px;
     color: rgb(244, 246, 248);
     font-size: 30px;
- 
-    
-   
+    white-space:nowrap;
+
+
 }
 
 
@@ -159,7 +161,7 @@ header {
 
 .jems-stope {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -176,17 +178,11 @@ header {
 /* photo text  */
 
 .verchual-de {
-    position: absolute;
-    text-align: center;
-    z-index: 10;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    
     font-size: 40px;
     color: antiquewhite;
     font-family: "jost", sans-serif;
-    opacity: 0;
-    transition: all .5s cubic-bezier(.165, .84, .44, 1);
+   
 
 }
 
@@ -194,6 +190,45 @@ header {
 .senter-of-nation {
     height: 500px;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.media-content{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 20px;
+    transform: translateY(60px);
+   
+   
+}
+.senter-of-nation:hover .media-content{
+    transform: translateY(0);
+}
+
+
+.button-for-london {
+    padding: 8px 16px;
+    display: inline-block;
+    margin-inline: auto;
+    /* position: absolute;
+      bottom: 0;
+      left:0; */
+    /* opacity: 0; */
+    /* visibility: hidden;  */
+    cursor: pointer;
+    text-decoration: none;
+     background-color: black;
+    color: #ffff;
 
 }
 
@@ -208,30 +243,35 @@ header {
 }
 
 /* end photo */
+
 /* footer */
-.footer{
-        
-background-color: aquamarine;
+.footer {
+
+    background-color: aquamarine;
 }
-.foster-monster{
-        text-align: center;
-        font-size: 40px;
-        color: blue;
+
+.foster-monster {
+    text-align: center;
+    font-size: 40px;
+    color: blue;
 
 }
-.mentor-foot{
-        color: rgb(119, 119, 143);
-        text-align: center;
-        font-size: 20px;
+
+.mentor-foot {
+    color: rgb(119, 119, 143);
+    text-align: center;
+    font-size: 20px;
 
 }
-.semple-kmino{
-        font-family: serif;
-        font-size: 60px;
-    
+
+.semple-kmino {
+    font-family: serif;
+    font-size: 60px;
+
 
 }
-.cemosemo-semia{
+
+.cemosemo-semia {
     height: 30px;
     border-radius: 50%;
     font-size: 35px;
@@ -347,7 +387,7 @@ background-color: aquamarine;
     }
 
     .neme-second {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .jems-stope {
@@ -388,7 +428,7 @@ background-color: aquamarine;
     }
 
     .neme-second {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .jems-stope {
@@ -427,7 +467,7 @@ background-color: aquamarine;
     }
 
     .neme-second {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .jems-stope {
